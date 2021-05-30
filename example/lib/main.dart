@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
           type: CoolAlertType.success,
           text: 'Transaction completed successfully!',
           autoCloseDuration: Duration(seconds: 2),
+          showConfirmBtn: false,
         );
       },
       text: 'Success',

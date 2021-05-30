@@ -179,11 +179,11 @@ class CoolAlertContainer extends StatelessWidget {
   String? _whatTitle() {
     switch (options!.type) {
       case CoolAlertType.success:
-        return 'Success!!!';
+        return 'Success!';
       case CoolAlertType.error:
-        return 'Error!!!';
+        return 'Error!';
       case CoolAlertType.warning:
-        return 'Warning!!!';
+        return 'Warning!';
       case CoolAlertType.confirm:
         return 'Are you sure?';
       case CoolAlertType.info:

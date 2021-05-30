@@ -25,6 +25,11 @@ class CoolAlertButtons extends StatelessWidget {
   }
 
   Widget _okayBtn(context) {
+    final showConfirmButton = options!.showConfirmBtn!;
+    if (!showConfirmButton) {
+      return Container();
+    }
+
     final showCancelBtn =
         options!.type == CoolAlertType.confirm ? true : options!.showCancelBtn!;
 

@@ -49,7 +49,7 @@ class CoolAlert {
     VoidCallback? onCancelBtnTap,
 
     /// Confirmation button text
-    String confirmBtnText = 'Ok',
+    String confirmBtnText = 'OK',
 
     /// Cancel button text
     String cancelBtnText = 'Cancel',
@@ -65,6 +65,8 @@ class CoolAlert {
 
     /// Determines if cancel button is shown or not
     bool showCancelBtn = false,
+
+    bool showConfirmBtn = true,
 
     /// Dialog Border Radius
     double borderRadius = 10.0,
@@ -113,6 +115,7 @@ class CoolAlert {
       confirmBtnTextStyle: confirmBtnTextStyle,
       cancelBtnTextStyle: cancelBtnTextStyle,
       showCancelBtn: showCancelBtn,
+      showConfirmBtn: showConfirmBtn,
       borderRadius: borderRadius,
       backgroundColor: backgroundColor,
       flareAsset: flareAsset,
@@ -158,7 +161,7 @@ class CoolAlert {
             return child;
         }
       },
-      transitionDuration: Duration(milliseconds: 200),
+      transitionDuration: Duration(milliseconds: 0),
       barrierDismissible:
           autoCloseDuration != null ? false : barrierDismissible,
       barrierLabel: '',
