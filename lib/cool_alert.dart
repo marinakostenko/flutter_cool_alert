@@ -65,7 +65,6 @@ class CoolAlert {
 
     /// Determines if cancel button is shown or not
     bool showCancelBtn = false,
-
     bool showConfirmBtn = true,
 
     /// Dialog Border Radius
@@ -156,7 +155,6 @@ class CoolAlert {
 
           case CoolAlertAnimType.slideInRight:
             return Animate.slideInRight(child: child, animation: anim1);
-
           default:
             return child;
         }

@@ -101,7 +101,7 @@ class CoolAlertContainer extends StatelessWidget {
                       ? null
                       : SingleLoopController(
                           options!.flareAnimationName!,
-                          1,
+                          0,
                         ),
                 )
               : Lottie.asset(options!.lottieAsset!),
